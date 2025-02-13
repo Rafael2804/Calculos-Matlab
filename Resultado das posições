@@ -1,0 +1,92 @@
+%%Limpar memoria
+clc; clear all;
+
+%%Primeira posicao
+H01=denavit(0,0,0.056,0);
+H12=denavit(0.015,90,0.015,0);
+H23=denavit(0.105,0,0,90);
+H34=denavit(0.147,0,0,-90);
+H45=denavit(0,90,0,0);
+H56=denavit(0,0,0.18,0);
+
+Hpoisicao1=H01*H12*H23*H34*H45*H56
+
+%%Segunda posicao
+H01=denavit(0,0,0.056,0);
+H12=denavit(0.015,90,0.015,0);
+H23=denavit(0.105,0,0,90+20);
+H34=denavit(0.147,0,0,-90);
+H45=denavit(0,90,0,0);
+H56=denavit(0,0,0.18,0);
+
+Hpoisicao2=H01*H12*H23*H34*H45*H56
+
+%%Terceira posicao
+H01=denavit(0,0,0.056,0);
+H12=denavit(0.015,90,0.015,30);
+H23=denavit(0.105,0,0,90+20);
+H34=denavit(0.147,0,0,-90);
+H45=denavit(0,90,0,0);
+H56=denavit(0,0,0.18,0);
+
+Hpoisicao3=H01*H12*H23*H34*H45*H56
+
+%%Quarta posicao
+H01=denavit(0,0,0.056,0);
+H12=denavit(0.015,90,0.015,30);
+H23=denavit(0.105,0,0,90);
+H34=denavit(0.147,0,0,-90);
+H45=denavit(0,90,0,0);
+H56=denavit(0,0,0.18,0);
+
+Hpoisicao4=H01*H12*H23*H34*H45*H56
+
+%%Quinta posicao
+H01=denavit(0,0,0.056,0);
+H12=denavit(0.015,90,0.015,30);
+H23=denavit(0.105,0,0,90+20);
+H34=denavit(0.147,0,0,-90+20);
+H45=denavit(0,90,0,0);
+H56=denavit(0,0,0.18,0);
+
+Hpoisicao5=H01*H12*H23*H34*H45*H56
+
+%%Sexta posicao
+H01=denavit(0,0,0.056,0);
+H12=denavit(0.015,90,0.015,-30);
+H23=denavit(0.105,0,0,90+20);
+H34=denavit(0.147,0,0,-90+20);
+H45=denavit(0,90,0,0);
+H56=denavit(0,0,0.18,0);
+
+Hpoisicao6=H01*H12*H23*H34*H45*H56
+
+%%Setima posicao
+H01=denavit(0,0,0.056,0);
+H12=denavit(0.015,90,0.015,-30);
+H23=denavit(0.105,0,0,90+20);
+H34=denavit(0.147,0,0,-90+20);
+H45=denavit(0,90,0,20);
+H56=denavit(0,0,0.18,0);
+
+Hpoisicao7=H01*H12*H23*H34*H45*H56
+
+%%Oitava posicao
+H01=denavit(0,0,0.056,0);
+H12=denavit(0.015,90,0.015,-30);
+H23=denavit(0.105,0,0,90+20);
+H34=denavit(0.147,0,0,-90);
+H45=denavit(0,90,0,0);
+H56=denavit(0,0,0.18,0);
+
+Hpoisicao8=H01*H12*H23*H34*H45*H56
+
+%%Nona posicao
+H01=denavit(0,0,0.056,0);
+H12=denavit(0.015,90,0.015,-30);
+H23=denavit(0.105,0,0,90);
+H34=denavit(0.147,0,0,-90);
+H45=denavit(0,90,0,0);
+H56=denavit(0,0,0.18,0);
+
+Hpoisicao9=H01*H12*H23*H34*H45*H56
